@@ -1,0 +1,556 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap');
+
+:root{
+    --purple: #704E70;
+    --yellow: #FDF5BF;
+    --white: #EBEBEB;
+    --black: #35323E;
+
+    --y-shadow: 2px 2px 4px rgba(253, 245, 191, 0.5);
+    --box-shadow:0 .5rem 1rem rgba(209, 209, 211);
+    --h-box-shadow:0 .5rem 1rem rgba(27, 23, 37);
+    --border:.1rem solid rgba(0,0,0,.3);
+}
+
+*{
+    font-family: 'Cpmfortaa', cursive;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    border: none;
+}
+
+*::selection{
+    color: var(--yellow);
+}
+
+::-webkit-scrollbar{
+    width: 1rem;
+    height: .5rem;
+}
+
+::-webkit-scrollbar-track{
+    background-color: var(--yellow);
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: var(--purple);
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 6rem;
+    scroll-behavior: smooth;
+}
+
+section{
+    padding: 2rem;
+    margin: 0;
+}
+
+
+.header{
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    padding: 1rem;
+    background: url('https://www.ghibli.jp/gallery/marnie021.jpg') no-repeat center center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-blend-mode: color;
+}
+
+.header .flex{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.header .logo{
+    color: #F2F2F2;
+    font-size: 1rem;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.j-text{
+    font-size: 1.2rem;
+}
+
+.button{
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 1rem 1rem;
+    cursor: pointer;
+    font-size: 1.8rem;
+    color: var(--purple);
+    background-color: var(--yellow);
+    border-radius: .5rem;
+    text-transform: capitalize;
+    text-align: center;
+    box-shadow: var(--h-box-shadow);
+}
+
+.button:hover{
+    background-color: var(--purple);
+    color: var(--yellow);
+    box-shadow:  var(--y-shadow);
+}
+
+.header .flex .navbar{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    margin-left: auto;
+}
+
+.header .flex .navbar a{
+    padding: .3rem 1rem;
+    margin-right: 1rem;
+    font-size: 1.6rem;
+    color: var(--black);
+    border-radius: .5rem;
+    text-transform: capitalize;
+    background-color: transparent;
+    box-shadow:  var(--h-box-shadow);
+}
+
+.header .flex .navbar a:hover{
+    background-color: var(--purple);
+    color: var(--yellow);
+    box-shadow: var(--y-shadow);
+}
+
+body{
+    background: url('https://www.ghibli.jp/gallery/marnie021.jpg') no-repeat center center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-blend-mode: color;
+}
+
+
+/* home */
+
+
+#home {
+    padding: 2rem;
+    margin: 0;
+    min-height: 100vh;
+}
+
+#home .home-container p{
+    text-align: left;
+    display: block;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    font-size: 1.4rem;
+    color:  var(--yellow);
+    text-shadow: var(--h-box-shadow);
+}
+
+#home .home-container{
+   margin: 180px 5px 0 60px;
+   padding: 20px 60px;
+   max-width: 600px;
+}
+
+#home .button-container {
+    text-align: right; 
+}
+
+#home .button-container .btn{
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 1rem 1rem;
+    cursor: pointer;
+    font-size: 1.8rem;
+    color: var(--purple);
+    background-color: var(--yellow);
+    border-radius: .5rem;
+    text-transform: capitalize;
+    text-align: center;
+    box-shadow: var(--h-box-shadow);
+}
+
+#home .button-container .btn:hover{
+    background-color: var(--purple);
+    color: var(--yellow);
+    box-shadow:  var(--y-shadow);
+}
+
+
+#home .home-container h1{
+    color:  var(--yellow);
+    font-size: 3rem;
+    text-shadow: var(--h-box-shadow);
+}
+#home .font{
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+
+
+/* about section */
+
+#about {
+    min-height: 80vh;
+    padding: 2rem;
+    margin: 0;
+    padding-top: 5rem;
+}
+
+.home{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+}
+
+
+#about .home-container p{
+    color: var(--white);
+    text-shadow: var(--h-box-shadow);
+    font-size: 1.6rem;
+}
+
+#about .home-container{
+   display: inline-block;
+   padding: 20px 60px;
+   max-width: 600px;
+   border-radius: 5rem;
+   flex: 1;
+}
+
+#about .img-container{
+    display: flex;
+    justify-content: center;
+    align-items: left;
+    max-width: 300px;
+    max-height: auto;
+    overflow: hidden;
+    box-shadow: var(--h-box-shadow);
+}
+
+#about .img-container img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+#about .button-container {
+    text-align: right; 
+    justify-content: cente;
+}
+
+#about .home-container button{
+    display: inline-block;
+    background-color: transparent;
+    box-shadow: var(-);
+    border: var(-);
+    border-radius: 3rem;
+    padding: 1rem .5rem 0 .5rem;
+    color: var(--black);
+    text-align: center;
+    font-size: 1.7rem;
+}
+
+
+#about .home-container h3{
+    color: var(--white);
+    font-size: 3rem;
+    text-shadow: var(--h-box-shadow);
+}
+
+
+/* charcters section */
+
+#info {
+    min-height: 80vh;
+    padding: 2rem;
+    padding-top: 5rem;
+}
+
+h1{
+    text-align: center;
+    margin-bottom: 2.5rem;
+    font-size: 3rem;
+    color: var(--yellow);
+    text-shadow: var(--h-box-shadow);
+    padding: 1rem 0;
+}
+
+#info .box-container{
+    display: grid;
+    grid-template-columns: repeat( auto-fit, 25rem);
+    gap: 1.5rem;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+#info .box-container .box{
+    border-radius: .8rem;
+    border: var(--border);
+    box-shadow: var(--h-box-shadow);
+    overflow-x: hidden;
+}
+
+
+#info .box-container .box p{
+    font-size: 2rem;
+    padding: .8rem;
+    text-transform: capitalize;
+    color: var(--white);
+    text-shadow: var(--h-box-shadow);
+}
+
+#info .box-container .box img{
+    height: auto;
+    width: 25rem;
+    object-fit: contain;
+    box-shadow: var(--h-box-shadow);
+}
+
+
+
+/* more section */
+
+#more{
+    padding-top: 5rem;
+    min-height: 80vh;
+}
+
+#more .box-container{
+    display: grid;
+    grid-template-columns: repeat( auto-fit, 25rem);
+    gap: 1.5rem;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+#more .box-container .box{
+    border-radius: 2rem;
+    overflow-x: hidden;
+    position: relative;
+    display: inline-block;
+}
+
+#more .box-container .box img{
+    height: auto;
+    width: 25rem;
+    object-fit: contain;
+}
+
+#more .box p{
+    position: absolute;
+    top: -100%;
+    left: 0;
+    width: 100%;
+    height: 50%;
+    border-radius: 2rem;
+    background-color: rgba(72, 75, 76, 0.5);
+    color: white;
+    text-align: center;
+    font-size: 1.5rem;
+    padding: 10px;
+    transition: top 0.3s ease;
+}
+
+#more .box span{
+    position: absolute;
+    bottom: 0;
+}
+
+#more .box:hover p{
+    top: 0;
+}
+
+
+/* footer */
+
+
+.footer{
+    padding: 2rem;
+    text-align: center;
+}
+
+.footer .extra-links{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.footer .extra-links a{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    padding: 1.8rem 0.2rem;
+    font-size: 1.5rem;
+    text-align: center;
+    color: var(--yellow);
+    margin-right: .8rem;
+    transform: .2s linear;
+}
+
+.footer .extra-links a:hover{
+    text-decoration: underline;
+}
+
+.footer .links{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.footer .links a{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    padding: 1.8rem 0.2rem;
+    font-size: 2rem;
+    text-align: center;
+    color: var(--purple);
+    margin-right: .8rem;
+    transform: .2s linear;
+}
+
+.footer .links a:hover{
+    color: var(--yellow);
+    position: relative;
+    display: inline-block;
+}
+
+.footer .links a:hover::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 8px; 
+    width: 5px; 
+    height: 5px; 
+    background-color: var(--yellow); 
+    border-radius: 50%; 
+  }
+
+.footer .flex-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 1.2rem;
+}
+
+
+.footer .flex-container .box a{
+    padding: 1.8rem 0.2rem;
+    font-size: 2rem;
+    text-align: center;
+    color: var(--purple);
+    margin-right: .8rem;
+    transform: .2s linear;
+    text-transform: capitalize;
+}
+
+.footer .flex-container .box a:hover{
+    color: var(--yellow);
+    margin-right: 2rem;
+}
+
+.footer .credit {
+    text-align: center;
+    padding:1.5rem 1rem;
+    border-top: var(--border);
+    font-size: 1rem;
+    color: var(--black);
+    line-height: 1rem;
+}
+
+.footer .credit span{
+    color: var(--yellow);
+    text-transform: capitalize;
+}
+
+
+
+/* responses */
+
+
+@media (max-width:991px){
+
+    html{
+        font-size: 55%;
+    }
+}
+
+@media (max-width:770px){
+    .header .flex .navbar{
+        padding: 1rem .5rem;
+    }
+
+    .header .flex .navbar a{
+        display: none;
+    }
+
+    .footer .links{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .footer .links a{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+    }
+
+    .footer .flex-container .box a{
+        display: flex;
+        flex-direction: column;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+    .footer .flex-container .box{
+        display: flex;
+        flex-direction: row;
+    }
+}
+
+@media (max-width:450px){
+
+    html{
+        font-size: 50%;
+    }
+
+    #home .hom-container{
+        margin-left: 5px;
+    }
+
+
+    #about .home{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
